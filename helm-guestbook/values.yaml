@@ -1,45 +1,57 @@
-# Default values for helm-guestbook.
-# This is a YAML-formatted file.
-# Declare variables to be passed into your templates.
-
-replicaCount: 1
-
+#ENC[AES256_GCM,data:M01pKfvBLJpWIE2lqllbukpHZmKU5/R5AitBMSuzWBOu6io=,iv:/+FlT2VBGjk6IkA+tEih2pdLNZU1l9SPQMbQPIvdWRU=,tag:jJojs568P7j9wPApka8s+g==,type:comment]
+#ENC[AES256_GCM,data:hjh8cDyGzJ3O+NPsGnan2368K3aaEJRjI8uC073R+A==,iv:/zzxTE5Js3RfZElrHSoebPZiNvmfnU/p9hXoL0W9GEA=,tag:DcdO0xNWzmAOO0r3/mAR2w==,type:comment]
+#ENC[AES256_GCM,data:okah3KexzXkU0fiab173COy3qIq7IA7YGHTBrqDf8VN04h4eHz/mVQnHMvUNLgk8gClIwQ==,iv:pzoveDPu9TX9FFTtR10P2Lqp6my7zKSO9mRRJ+/h6d4=,tag:JjLs/H/BNukT+Q9ytqyz/A==,type:comment]
+replicaCount: ENC[AES256_GCM,data:UQ==,iv:w81PtOB9Rh7xg3KuhS8NEBfRHeuaLuVfzG2iVDeIGjw=,tag:mv0jXP+E/KGXJ0+uE3lzhw==,type:int]
 image:
-  repository: lowyard/ks-guestbook-demo
-  tag: 0.2
-  pullPolicy: IfNotPresent
-
+    repository: ENC[AES256_GCM,data:O9aaZLGJ0ChXtzMrCzDagF7bWHwE3AD/FA==,iv:eT2cFbKMxuANqRg9UOfCx1RlxYr9XLgLKGTd/SK4o7g=,tag:bxeSd4qwLzKH68f17KUcIA==,type:str]
+    tag: ENC[AES256_GCM,data:tDji,iv:vYJr3BYw6MFZS5ZTMM996MhpKLps0h8y9VeqN5lh3GE=,tag:gF3LitGol8QK6wqREf8TUA==,type:float]
+    pullPolicy: ENC[AES256_GCM,data:yZdlXJm5d29fONIw,iv:OuIcauf1Pv9veRkA7iee+rxw3JyGVRvwN0un8ujQtBY=,tag:xTFP0lMRRoRl1IRYsacY9w==,type:str]
 service:
-  type: ClusterIP
-  port: 80
-
+    type: ENC[AES256_GCM,data:zNU4+tTb4ZE5,iv:qidRhhDEfYrTkdj4f+IhmY/ieHSvYoy5nranwAl+Jtg=,tag:GGiBvv5BP7s6Zs6vIA/HKg==,type:str]
+    port: ENC[AES256_GCM,data:M8k=,iv:ITS41hnUObNAztFldU5Cd8XKasQc6XDkMj/QN46Aa4M=,tag:dKr5BhV6FzX/TVP8OxIOjA==,type:int]
 ingress:
-  enabled: false
-  annotations: {}
-    # kubernetes.io/ingress.class: nginx
-    # kubernetes.io/tls-acme: "true"
-  path: /
-  hosts:
-    - chart-example.local
-  tls: []
-  #  - secretName: chart-example-tls
-  #    hosts:
-  #      - chart-example.local
-
+    enabled: ENC[AES256_GCM,data:urjRZqU=,iv:NT6r48nPpMfGlZFUeVCyreMzJh0R+pi5BDjDwmH+USM=,tag:NN5L4fL9VGD1kg6W5emVVA==,type:bool]
+    annotations: {}
+    #ENC[AES256_GCM,data:DJN+VpqwbkLcEkAdrxZrT6/orrx19/LnNnmJfgt8QevjQlI=,iv:aTn14fd6PSliyJGdxWKqeYeMhx0ygcEV2zoYW3T3WXY=,tag:OwqCq66yuL42MrYN7QvM7g==,type:comment]
+    #ENC[AES256_GCM,data:vEo9zaBkYQi1G2SwhliNkc7ckXFo2Brb9G0bS30lOg==,iv:+pk8MehGvmNdTeEqsgA45XpmfT2JGPBAwIBuFkzBAMw=,tag:GbEuZWmmoWme7xL1tsu3/Q==,type:comment]
+    path: ENC[AES256_GCM,data:6Q==,iv:Ht8LxTgnEJKRzHCJTmJFoEOcgCCI/gXx4TS83J2FTHI=,tag:KoSSwlZZ+nP+IJk9EapVQg==,type:str]
+    hosts:
+        - ENC[AES256_GCM,data:y/v02mHV2dyWAUtQl+OJdtSVMA==,iv:H6l6zgzJOn3HLjUspqP2A7JfCeFX/poZGXf8FDU9Vus=,tag:nOda5WswisN61nEaPRBuyA==,type:str]
+    tls: []
+    #ENC[AES256_GCM,data:GYb/GQ8Afl0Ap2EYXY6uEKH+SpXe352DDqmJ58L3jQxc,iv:k3HRYSElmZpKe8JhOft8ZT59IxelirGmalmht3SSE5E=,tag:W1KM61Ry9jntsoKeHdgQ3A==,type:comment]
+    #ENC[AES256_GCM,data:j8Xt7xhy2nv4tg==,iv:5KZGWMlsAZUO47HiLavcv8Y5GhsirdtlpNnXXAoOiTM=,tag:Q4z5o+Lg/Bryte6kImPufw==,type:comment]
+    #ENC[AES256_GCM,data:pQ5RVWELFjhwl/TQhkb7KVinlx3YrZe/VBCr,iv:k88wYoAXea6ATYED0ofxIlDpXZmDBaCTXtV2WEHISRo=,tag:dWk6/gKJWbvMry/VbxqInA==,type:comment]
 resources: {}
-  # We usually recommend not to specify default resources and to leave this as a conscious
-  # choice for the user. This also increases chances charts run on environments with little
-  # resources, such as Minikube. If you do want to specify resources, uncomment the following
-  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
-  # limits:
-  #  cpu: 100m
-  #  memory: 128Mi
-  # requests:
-  #  cpu: 100m
-  #  memory: 128Mi
-
+#ENC[AES256_GCM,data:EIBpPzcW9lq8QEJxYMtGIVnjo8MfR1RVEALAs8XYzf3ap1+682RsXeYpFSaXvVDrGiY+0sR8kz66SZqNKbnqJfbLAVsoZ2NlNb2qZlavPajrWgp0Ai7X,iv:LhWCm8X60MQaADbOS2II0cPR4JZvNw4z0JBY1dGmeM0=,tag:O/IuHb/5lkcF0Mja8ZzSKA==,type:comment]
+#ENC[AES256_GCM,data:wbol6ythdnFR06t0cQDJDW13ZAOMOGAe61D4RpzSNIf01ChrE9bHGLYjeNMXh+salhzLq7GUom3YPaBUCzmf8H7FLNpYpQ2HD6y4a1nqcKgMqn36EkTYqg==,iv:YIXuCWtT6yjXad753OTbWEKoCuflf7ZIEVD1PMvlSHs=,tag:68+nUEKp5dZO8YQnFOKc4A==,type:comment]
+#ENC[AES256_GCM,data:HNR9E98eFfHZ3ofr3XbXCRNIJseqliKa57uVsBzmkZF/vHVcmkRzy3NPQ6nx0Lov43fgccscF/cr/0tm6XWKCXwUQw+Hd2E2gu6avVMgsvD+RZd7eojfBGOv,iv:loPAuOH8Jm76KFxNOR0uot7VC0KUjB9461DWxxmvGeg=,tag:+j4jY9SmWfXsquVRam1AZA==,type:comment]
+#ENC[AES256_GCM,data:x/NN8px+Up2yikMKnu3ZC+L58otCjr2kpxfitLlq866X0hIzKKQjTj5hciAYpvg4Q2tdtug7Dz6uBwk/V98TyUlNV2bpnQ+h7y9UnIBM+ejI,iv:Tuy9N65WlbSiXZH8DDmFKlMfbgtJD0/mo7tGqG/olQ4=,tag:NMd0Tanr+HaABFleUPk0qg==,type:comment]
+#ENC[AES256_GCM,data:3tsOb+lfN0g=,iv:V5OoSjF3uzqv7HyqjPsVICF0YQ3CJ3HHyiAdNoQDO9A=,tag:eAKMv6uPyInH7mXEUUltbA==,type:comment]
+#ENC[AES256_GCM,data:qZTP5VujefYEVkE=,iv:L2wFdIIrtroufz1ranWTN0dNFL7AF7xglpJ7i2yL/4Q=,tag:T8dDWitqK42tW8RLrO1N7g==,type:comment]
+#ENC[AES256_GCM,data:JFeITk++UsYLRolg5F/G,iv:vzu2dNw09OBCSw792dXCPXoI+JosRjYZ3U/jMPI1Pn8=,tag:DsXtgG+DBc8/LFAJSEKfTg==,type:comment]
+#ENC[AES256_GCM,data:3eTH6O4udTpFYQ==,iv:D46M5kzuTrUk+3xnJODuKDVvxl8PLCkUq+RkE4/nsKU=,tag:ulgKaJi4Yr/Y2aBobdK4SA==,type:comment]
+#ENC[AES256_GCM,data:r+rZMIHQ2uNI+vs=,iv:7WYs07mTbCKR9F4ah35XB4CkT9bZ4f/T01HB5Xnb6J0=,tag:SgB982BHKxKCDtRKCVy3qg==,type:comment]
+#ENC[AES256_GCM,data:Og9cTckhcH+P5BzhhNna,iv:5195jygQZQfqTse7pzx/QB/fMh3aMyJZKmurVLnH0Gw=,tag:IpEc7yQxpwga+wfieHFO6A==,type:comment]
 nodeSelector: {}
-
 tolerations: []
-
 affinity: {}
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1nueqqpzl55e7d4jx9mavu2w346dvd36p7kqyvla8zah45h8zj49q5eng32
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBBRHY3VTgraFlIUGtLRnlT
+            T1NwRTg4UFhuSnRnNW55VTd2T1MzcUs0YUdzCmVmVjF4ZXBBaWY0VzJMK0hwVG1X
+            WFpValQvZDZ4SVlJUHprUHNlVWpmUzgKLS0tIEhhelBGdHR2Zk55eFFONVdVeTU0
+            WDMvaWVBb0ttSThDSUlxTlAwQjZzRzQKwrwFOBrCGSJ2TrqHtswXXLmpy4ht+QLS
+            GJsR2Toihgkh7AufFn4Y8JXp8/zazaPTK/AY50MnnEMwaYCSm5ivag==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2022-05-17T08:05:27Z"
+    mac: ENC[AES256_GCM,data:fm/5IytJWh+BlREGZXZ9FhdV6GwhVZEiQ6ipltaIpxVmsUZx0P6msCDQ1zBfT/lcNnhXHwJR4ukLYin9qGfLreWcs14Zk2dOw08dfba0F/WSsF6ypyuUaNTvKi8sg2gzV1isoYdtxGNuh8190VPrem5KUJWOddGv9nbrmf6k3K4=,iv:r+/nOFnhgs/re+V/uSLHj4u1xCh5377+/9dh6TpoGO0=,tag:/iUPhLkVC1uLdFTtMA/nhQ==,type:str]
+    pgp: []
+    unencrypted_suffix: _unencrypted
+    version: 3.7.2
